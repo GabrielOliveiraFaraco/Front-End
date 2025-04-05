@@ -1,0 +1,13 @@
+@import url(reset.css);
+
+strong{
+    font-weight: 700;
+}
+
+.paragrafo{
+    color: aqua;
+}
+
+p{
+    color: pink;
+}

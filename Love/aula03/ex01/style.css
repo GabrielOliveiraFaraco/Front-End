@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montez&family=Mrs+Saint+Delafield&display=swap');
+
+:root{
+    --cor-clara: #ccdffa;
+    --cor-media: #B4D4FF;
+    --cor-media2: #86B6F6;
+    --cor-escura: #424769;
+    --fonte-principal: "Comfortaa", sans-serif;
+}
+
+body{
+    background-color: var(--cor-clara);
+    color: var(--cor-media2);
+    font-family: var(--fonte-principal);
+}
+
+h1{
+    background-color: var(--cor-media);
+}
+
+li{
+    color: var(--cor-escura);
+}
+
+img{
+    border: var(--cor-media2) dotted 5px;
+}
+
+a{
+    color: var(--cor-escura);
+    text-decoration: none;
+    border: #6771b7 solid 2px;
+    padding: 4px;
+    border-radius: 25%;
+    background: #7881c4;
+}

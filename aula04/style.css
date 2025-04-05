@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --roxo-claro: #AD49E1;
+    --roxo-escuro: #7A1CAC;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 37, 37);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    height: 1200px;
+    width: 60%;
+    margin: 5px auto;
+}
+
+.black{
+    background-color: var(--preto);
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: var(--branco);
+    padding: 0 40px 0 40px;
+    
+}
+
+.barra{
+    border: 1px solid var(--roxo-claro);
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.progresso-100{
+    height: 100%;
+    width: 100%;
+    background-color: var(--roxo-escuro);
+    border-radius: 10px;
+}
+
+.progresso-90{
+    height: 100%;
+    width: 90%;
+    background-color: var(--roxo-escuro);
+    border-radius: 10px;
+}
+
+.progresso-20{
+    height: 100%;
+    width: 20%;
+    background-color: var(--roxo-escuro);
+    border-radius: 10px;
+}
+
+.white{
+    background-color: var(--branco);
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 0 40px 0 40px;
+}
+
+.clear{
+    clear: both;
+}
+
+.imagem{
+    width: 260px;
+    height: 260px;
+    border: 10px solid var(--roxo-claro);
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 16px;
+}
+
+.titulo3{
+    color: var(--roxo-claro);
+    font-style: italic;
+    font-weight: 400;
+    margin: 16px 0; 
+    font-size: 24px;
+}
+
+.titulo2{
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: var(--roxo-claro);
+}
+
+h4{
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contatos{
+    margin-top: 36px;
+}
+
+.contatos p{
+    margin-bottom: 16px;
+}
+
+.contatos_icone{
+    display: flex;
+}
+
+.contatos_texto{
+    padding-left: 3%;
+}
+
+.contatos_sociais{
+    color: var(--branco);
+    text-decoration: none;
+    padding-bottom: 4%;
+}
+
+.h3{
+    font-style: italic;
+}
+
+.p{
+    font-style: italic;
+}
+
+i{
+    color: var(--roxo-claro);
+}
+
+.direita{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa{
+    padding: 10% 0;
+}
+
+.caixa_texto{
+    padding: 5% 0;
+}
+
+.white li{
+    padding: 3% 0;
+}
+
+.caixa li{
+    padding-right: 10px;
+}
+
+.circulo{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--preto);
+    background-color: var(--preto);
+    display: inline-block ;
+}
+
+.circulo-vazio{
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--preto);
+    border-radius: 50%;
+    display: inline-block ;
+}
+
+.caixa-progresso{
+    display: flex;
+    align-items: center;
+}

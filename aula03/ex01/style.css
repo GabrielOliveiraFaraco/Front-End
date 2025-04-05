@@ -1,0 +1,80 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montez&display=swap');
+
+:root {
+    --cor-fonte: #504B38;
+    --cor-fundo: #F8F3D9;
+    --fonte-principal: "Montez", cursive;
+;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+}
+
+br{
+    height: 20px;
+    width: 80%;
+    background-color: var(--cor-fonte);
+    border: none;
+}
+
+.cabecalho{
+    background-color: #B9B28A;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 4.5em;
+    padding: .2em;
+    font-weight: 550;
+}
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.nome{
+    font-size: 2em;
+    padding: .5em;
+    font-style: italic;
+}
+
+/* .info_sec{
+    display: flex;
+} */
+
+.info{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.lista{
+    font-size: 16px;
+    padding: 1em;
+}
+
+.imagem{
+    height: 18em;
+    padding: 2em;
+}
+
+.rodape{
+    flex-direction: column;
+}   
+
+.link{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-size: 2em;
+    border: 2px solid var(--cor-fonte);
+    padding: .2em;
+}

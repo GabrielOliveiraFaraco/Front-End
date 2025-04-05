@@ -1,0 +1,23 @@
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    /* color: pink; */
+    /* Meu comentário */
+}
+p{
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+#p-especial{
+    font-size: 50px;
+}
+/* Criando um classe para estilo de borda */
+.borda-verde{
+    border: 5px solid green;
+}
+hr{
+    height: 20px;
+    width: 80%;
+    background-color: black;
+    border: none;
+}
