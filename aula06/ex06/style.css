@@ -8,10 +8,14 @@ body{
     background-color: #101218;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+}
+
+h2{
+    color: #ECECEC;
 }
 
 .cabecalho{
-    width: 60%;
     /* border: 1px solid; */
     margin-top: 50px;
     margin-bottom: 30px;
@@ -21,6 +25,7 @@ body{
 }
 
 .titulo {
+    color: #EEF0FF;
     font-size: 28px;
 }
 
@@ -34,7 +39,6 @@ body{
 }
 
 .classificacao{
-    width: 60%;
     margin-top: 20px;
 }
 
@@ -56,6 +60,7 @@ th{
     font-size: 12px;
     text-align: center;
     padding: 5px;
+    color: #999DA9;
 }
 
 td{
@@ -63,6 +68,7 @@ td{
     text-align: center;
     font-size: 14px;
     padding: 5px;
+    color: #BDC1C6;
 }
 
 .clube{
@@ -96,7 +102,6 @@ td{
 }
 
 .gols{
-    width: 60%;
     margin-top: 20px;
 }
 
@@ -120,4 +125,26 @@ td{
 
 .text_left{
     text-align: left;
+}
+
+.assistencias{
+    margin-top: 20px;
+}
+
+.assistencias img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.assistencias h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.assistencias table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
 }
