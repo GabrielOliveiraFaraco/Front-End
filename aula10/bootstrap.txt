@@ -1,0 +1,260 @@
+Introdução ao Desenvolvimento Web
+Prof.: Juliano Ramos Matos
+
+CLASSES BOOTSTRAP 5
+
+
+1 Contêineres (Containers)
+
+A classe .container fornece um contêiner responsivo de largura fixa:
+Extra pequeno <576px : 100%
+Pequeno ≥576px: 540px
+Médio ≥768px:  720px
+Grande ≥992px: 960px
+Extragrande ≥1200px:  1140 px
+XL ≥1400px: 1320 pixels
+						
+
+A classe .container-fluid fornece um contêiner de largura total , abrangendo toda a largura da janela de visualização
+
+2 Sistema de grade (Grid)
+
+O sistema de grade do Bootstrap é construído com flexbox e permite até 12 colunas na página.
+
+Se não quiser usar todas as 12 colunas individualmente, você pode agrupar as colunas para criar colunas mais largas:
+Layout 2 colunas iguais: col-6 | col-6
+Layout 2 colunas: col-4 col-8 |
+Aqui a primeira coluna tem o dobro de largura da segunda.
+Layout 3 colunas iguais: col-4 | col-4 | col-4
+Layout 3 colunas: col-6 | col-3 | col-3
+Aqui a primeira coluna ocupa 50% do espaço total e as demais dividem o espaço restante.
+Layout 4 colunas iguais: col-3 | col-3 | col-3 | col-3
+Layout 4 colunas: col-6 | col-2 | col-2 | col-2
+Aqui a primeira coluna ocupa 50% do espaço total e as demais dividem o espaço restante.
+
+O sistema de grade é responsivo e as colunas serão reorganizadas automaticamente dependendo do tamanho da tela.
+
+Certifique-se de que a soma totalize 12 ou menos (não é necessário usar todas as 12 colunas disponíveis).
+
+
+2.1 Classes responsivas
+
+O sistema de grade Bootstrap  possui seis classes:
+
+.col-(dispositivos muito pequenos - largura da tela inferior a 576px)
+.col-sm-(dispositivos pequenos - largura de tela igual ou superior a 576px)
+.col-md-(dispositivos médios – largura da tela igual ou superior a 768px)
+.col-lg-(dispositivos grandes – largura de tela igual ou superior a 992px)
+.col-xl-(dispositivos xlarge - largura da tela igual ou superior a 1200px)
+.col-xxl-(dispositivos xxlarge - largura da tela igual ou superior a 1400px)
+
+As classes acima podem ser combinadas para criar layouts mais dinâmicos e flexíveis.
+
+Dica: Cada classe é ampliada, portanto, se você quiser definir as mesmas larguras para sm e md, basta especificar sm.
+
+2.2 Estrutura da grade
+
+Envolva as colunas com uma classe row. No exemplo abaixo, como não definimos classe de larguras de colunas, o bootstrap calcula larguras iguais para colunas.
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+
+2.3 Colunas responsivas
+
+Você adaptar o número de colunas em diferentes tamanhos de tela
+
+Exemplo 1: Layout com 3 colunas em dispositivos médios e grandes, e coluna única para dispositivos menores: 
+
+   <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12"> </div>
+      <div class="col-lg-4 col-md-4 col-sm-12"></div>
+    </div>
+
+row: Define uma linha na qual as colunas serão posicionadas.
+col: Define cada coluna e seu tamanho. As classes utilizadas neste exemplo:
+col-lg-4: Divide em 3 colunas em telas maiores que 992px (tamanho grande).
+col-md-4: Divide em 3 colunas em telas entre 768px e 991px (tamanho médio).
+col-sm-12: Define uma coluna (ocupando toda a largura) em telas entre 576px e 767px (tamanho pequeno).
+col-12: Define uma coluna (ocupando toda a largura) em telas menores que 576px (telas extra pequenas).
+
+
+
+
+Exemplo 2: Layout com 4 colunas em dispositivos grandes, 3 em médios, e 2 colunas para dispositivos menores: 
+
+
+ <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6"></div>
+      <div class="col-lg-3 col-md-4 col-sm-6"></div>
+      <div class="col-lg-3 col-md-4 col-sm-6"></div>
+      <div class="col-lg-3 col-md-4 col-sm-6"></div>
+    </div>
+
+row: Define uma linha na qual as colunas serão posicionadas.
+col: Define cada coluna e seu tamanho. As classes utilizadas neste exemplo:
+col-lg-3: Divide em 4 colunas em telas maiores que 992px (tamanho grande).
+col-md-4: Divide em 3 colunas em telas entre 768px e 991px (tamanho médio).
+col-sm-6: Divide em 2 colunas em telas entre 576px e 767px (tamanho pequeno).
+col-6: Divide em 2 colunas em telas menores que 576px (telas extra pequenas).
+
+
+3 Cores
+
+3.1 Cores de texto
+
+.text-muted: cinza claro.
+.text-primary: azul.
+.text-success: verde.
+.text-info: azul claro
+.text-warning: amarelo
+.text-danger: vermelho
+.text-secondary: cinza claro
+.text-white: branco
+.text-dark: tema dark, cinza próximo ao preto
+.text-body: (cor do corpo padrão/geralmente preto)
+.text-light: tema light, ´cinza próximo ao branco.
+
+3.2 Cores de fundo
+
+.bg-primary: azul.
+.bg-success: verde.
+.bg-info: azul clara
+.bg-warning: amarelo
+.bg-danger: vermelho
+.bg-secondary: cinza claro
+.bg-dark: tema dark, cinza próximo ao preto
+.bg-light: tema light, cinza próximo ao branco.
+
+5 Tipografia
+
+
+5.1 Classes para Títulos
+
+h1 a h6: Define os tamanhos de títulos de primeiro a sexto nível, respectivamente.
+display-1 a display-6: Define títulos maiores e mais destacados, com estilos mais adequados para layouts maiores.
+
+5.2 Classes para Listas
+
+.list-unstyled: Remove o estilo padrão de listas não ordenadas (<ul>), permitindo personalização completa.
+.list-inline: Transforma os itens da lista em elementos em linha, úteis para menus de navegação ou barras de ferramentas.
+.list-group: Aplica estilos específicos para listas em grupo, com bordas e cores diferenciadas.
+
+5.3 Classes Adicionais
+
+fw-bold: Aplica negrito ao texto.
+fst-italic: Aplica itálico ao texto.
+text-uppercase: Converte o texto para maiúsculas.
+text-lowercase: Converte o texto para minúsculas.
+text-capitalize: Converte a primeira letra de cada palavra para maiúscula.
+.text-decoration-none: Remove o sublinhado.
+.text-start: Indica texto alinhado à esquerda	
+.text-center: Indica texto alinhado ao centro.
+.text-end: Indica texto alinhado à direita.
+
+6 Bordas
+
+6.1 Classe de borda
+
+border: Aplica uma borda normal ao elemento.
+border-top: Aplica uma borda superior ao elemento.
+border-bottom: Aplica uma borda inferior ao elemento.
+border-left: Aplica uma borda esquerda ao elemento.
+border-right: Aplica uma borda direita ao elemento.
+
+Para definir uma largura para a borda utilize juntamente com a classe border as numerações de 1 a 6. Por exemplo, border-2 define uma borda com 2 pixels de espessura.
+
+6.2 Estilo de Borda
+
+border-solid: Aplica uma borda sólida.
+border-dashed: Aplica uma borda tracejada.
+border-dotted: Aplica uma borda pontilhada.
+
+6.3 Cor de Borda
+
+border-primary: Aplica uma borda azul (cor primária do Bootstrap).
+border-secondary: Aplica uma borda cinza claro (cor secundária do Bootstrap).
+border-success: Aplica uma borda verde (indicando sucesso).
+border-danger: Aplica uma borda vermelha (indicando erro).
+border-warning: Aplica uma borda amarela (indicando aviso).
+border-info: Aplica uma borda azul claro (indicando informação).
+border-light: Aplica uma borda cinza claro.
+border-dark: Aplica uma borda cinza escuro.
+
+6.4 Raio de Borda (border-radius)
+
+rounded: Arredonda todos os cantos do elemento.
+rounded-1: Arredonda levemente os cantos do elemento.
+rounded-2: Arredonda os cantos do elemento com um valor intermediário.
+rounded-3: Arredonda os cantos do elemento de forma mais significativa.
+rounded-4: Arredonda os cantos do elemento com um valor bastante alto.
+rounded-5: Arredonda os cantos do elemento ao máximo, criando um efeito quase circular.
+rounded-circle: Transforma o elemento em um círculo perfeito.
+rounded-pill: Arredonda o elemento com bordas superiores e inferiores mais curvadas, similar a uma cápsula.
+rounded-top: Arredonda apenas a borda superior do elemento.
+rounded-bottom: Arredonda apenas a borda inferior do elemento.
+rounded-start: Arredonda a borda esquerda do elemento.
+rounded-end: Arredonda a borda direita do elemento.
+
+
+7 Tamanhos (Largura e Altura)
+
+7.1 Largura
+
+w-100: Define a largura do elemento como 100% do seu contêiner pai.
+w-75: Define a largura do elemento como 75% do seu contêiner pai.
+w-50: Define a largura do elemento como 50% do seu contêiner pai.
+w-25: Define a largura do elemento como 25% do seu contêiner pai.
+w-auto: Define a largura do elemento automaticamente, de acordo com o seu conteúdo.
+
+7.2 Altura
+
+h-100: Define a altura do elemento como 100% do seu contêiner pai.
+h-75: Define a altura do elemento como 75% do seu contêiner pai.
+h-50: Define a altura do elemento como 50% do seu contêiner pai.
+h-25: Define a altura do elemento como 25% do seu contêiner pai.
+h-auto: Define a altura do elemento automaticamente, de acordo com o seu conteúdo.
+
+8 Espaçamento
+
+8.1 Margens
+
+As classes da margem são representadas pelas letra m: Margem (margin): Adiciona margem ao elemento em todas as direções (esquerda, direita, cima e baixo). As classes disponíveis são:
+m-0: Sem margem.
+m-1: Margem de 0.25rem.
+m-2: Margem de 0.5rem.
+m-3: Margem de 1rem.
+m-4: Margem de 1.5rem.
+m-5: Margem de 3rem.
+m-auto: Margem automática. 
+
+Margem em direções específicas:
+mt-: Margem superior.
+mb-: Margem inferior.
+ms-: Margem esquerda.
+me-: Margem direita.
+mx-: Margem direita e esquerda.
+my-: Margem superior e inferior.
+
+As classes seguem o mesmo padrão do m, com valores de 0 a 5 e auto.
+
+8.2 Preenchimento 
+
+As classes de preenchimento(padding) são representadas pela letra p.
+Adiciona preenchimento ao elemento em todas as direções. As classes disponíveis são:
+p-0: Sem preenchimento.
+p-1: Preenchimento de 0.25rem.
+p-2: Preenchimento de 0.5rem.
+p-3: Preenchimento de 1rem.
+p-4: Preenchimento de 1.5rem.
+p-5: Preenchimento de 3rem.
+
+Preenchimento em direções específicas:
+pt-: Preenchimento superior.
+pb-: Preenchimento inferior.
+ps-: Preenchimento esquerdo.
+pe-: Preenchimento direito.
+As classes seguem o mesmo padrão do p, com valores de 0 a 5.
