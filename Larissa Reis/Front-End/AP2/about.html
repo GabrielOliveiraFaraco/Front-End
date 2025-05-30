@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre mim</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light bg-dark text-light">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="index.html">Home</a>
+                </div>
+                <ul class="navbar-nav">
+                    <button type="button" class="nav-link" data-bs-toggle="tooltip" title="ArinTheL">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="about.html">Sobre&nbsp;Mim</a>
+                        </li>
+                    </button>
+
+                    <button type="button" class="nav-link text-light" data-bs-toggle="modal" data-bs-target="#login">
+                        Login
+                    </button>
+
+                    <div class="modal" id="login">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Login</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="/action_page.php">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">E-mail:</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Coloque o e-mail" name="email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pwd" class="form-label">Senha:</label>
+                                            <input type="password" class="form-control" id="pwd"
+                                                placeholder="Coloque a senha" name="pswd">
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="remember">
+                                                Lembrar e-mail e senha
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="d-flex flex-column min-vh-100 align-items-center bg-black text-light">
+        <main class="container m-5 d-flex flex-column">
+            <section class="container row d-flex vh-80">
+                <section class=" row col-12 col-md-6 d-flex">
+                    <div class="col-12 col-md-6">
+                        <img src="imagens/IMG_20250415_234500_767.jpg" alt="Larissa Mariana Fontes Reis"
+                            class="img-fluid w-100 rounded-4" style="max-height: 500px; max-width: 325px;">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column">
+                        <h2>Sobre mim</h2>
+                        <p>Prazer, meu nome é Larissa Reis e tenho 19 anos. Sou player de RPG desde 2022/23 e mestre nas
+                            horas vagas. RPG é meu hobbie principal (e meu favorito) mas não tenho praticado com
+                            frequência nos ultimos tempos. Gosto de escrever campanhas e sou uma player dedicada (pelo
+                            que a maioria diz (meu primeiro mestre de RPG pode confirmar essa informação kkkk)).</p>
+                    </div>
+                </section>
+                <section class="col-12 col-md-6 d-flex flex-column">
+                    <div class="container">
+                        <h2>Player e DM (Dungeon/Dice Master)</h2>
+                        <p>Comecei no mundo de RPG por uma mesa de D&D (Dungeons & Dragons), com o sistema levemente adaptado e simplificado para uma campanha de piratas. Começamos a planejar em 2022, todos os players (com excessão de um e o mestre) eram iniciantes no mundo dos RPGs, o que levou a uma série de discussões sobre qual seria o tema da nossa primeira campanha e como seriam nossos personagens. Isso resultou em um atraso por volta de um ano para a ideia sair do papel, mas em compensação levou o dobro do tempo para acabar (dois anos) uma vez que iniciado. Essa foi minha primeira experiência com RPG, mas após ela, nunca mais parei.</p>
+                        <p>Com o passar do tempo, meus amigos começaram a me implantar a ideia de mestrar um RPG próprio ao invés de só jogar. Confesso que demorei muito tempo para juntar confiança para mestrar pela primeira vez, demorei muitos meses apenas PLANEJANDO a história e seu desenvolvimento para no final acabar adiando um pouco mais minha estréia como mestre (levei dois meses para planejar a primeira versão e acabei adiando mais cinco meses para realmente mestrar). No final, valeu muito a pena e hoje em dia tenho uma vontade muito grande de continuar mestrando mesas (Inclusive estou planejando minha primeira campanha de verdade, as outras foram one-shots e mini campanhas). É um hobby que exige bastante tempo, mas vale muito a pena, recomendo!</p>
+                    </div>
+                </section>
+            </section>
+            <section class="mt-5 d-flex justify-content-center">
+                <h1>Minhas mesas</h1>
+            </section>
+
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 d-flex justify-content-around">
+
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="imagens/paranormalvalley.PNG" alt="#" class="card-img-top mt-3 rounded-4">
+                    <h3>Paranormal Valley</h3>
+                    <p>Em uma cidade pequena e pacífica do interior, algo anormal acontece. Uma morte sem precedentes
+                        aconteceu sem mais nem menos, mas como isso aconteceu? Um grupo de investigadores de uma cidade
+                        vizinha foram enviados para lidar com esse caso junto das autoridades locais. Como o caso
+                        procederá?</p>
+                    <p>- HistoryTeller, E.A.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stardew">
+                            Saiba Mais
+                        </button>
+
+                        <div class="modal" id="stardew">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark text-light">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detalhes</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Paranormal Valley foi uma ideia de juntar o jogo Stardew Valley (um jogo
+                                            pacífico de fazenda), com o sistema de RPG Ordem Paranormal. A história foi
+                                            uma mistura dos dois universos (2ª temporada de Ordem Paranormal e o late
+                                            game de Stardew Valley) com um boss inteiramente criado por mim que nomeei
+                                            de "O Espelhado".</p>
+                                        <p>Os jogadores foram designados para resolver o mistério envolvido em um
+                                            suposto "assassinato" que um investigador antigo da Ordem achou suspeito. Ao
+                                            desenrolar da história, descobriram o envolvimento de uma criatura
+                                            paranormal no caso juntamente da história da vítima, sua família e a pessoa
+                                            envolvida. Houveram alguns poucos plot-twists, referências, um combate e até
+                                            participações especiais de outros players, mas no final, derrotaram o boss e
+                                            tiveram um "good ending".</p>
+                                        <p>A sessão inicialmente era para ser apenas uma One Shot (campanha de apenas um
+                                            episódio), porém acabou virando uma mini campanha de três sessões principais
+                                            e duas sessões secundárias.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="imagens/coraline.jpeg" alt="#" class="card-img-top mt-3 rounded-4">
+                    <h3>Liliyeen's Nightmare</h3>
+                    <p>Um mistério paira no ar, as coisas acontecem de um modo estranho. Tome cuidado quando for domrir,
+                        nunca se sabe onde os sonhos podem nos levar. A propósito, já ouviu a história de uma garotinha
+                        que morava sozinha?</p>
+                    <p>- HistoryTeller, E.A.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#liliyeen">
+                            Saiba Mais
+                        </button>
+
+                        <div class="modal" id="liliyeen">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark text-light">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detalhes</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Liliyeen's Nightmare foi uma one-shot onde utilizei o sistema "Você Acorda
+                                            num Lugar Estranho" (You Wake Up in a Strange Place).</p>
+                                        <p>Como o próprio nome do sistema já diz, os jogadores acordaram em um lugar
+                                            estranho. Após saírem de uma sala com uma textura estranha que parecia uma
+                                            espécie de nuvem no espaço e passarem por uma pequena porta se depararam com
+                                            uma criança estranha, um jardin de flores "humanas", duas bonecas bizarras,
+                                            algumas fatalidades e uma história trágica. No final, de cinco jogadores,
+                                            restaram apenas três. Eles se encontraram em uma situação difícil após
+                                            descobrirem o passado da criança e acabarm acidentalmente a sacrificando.
+                                            Após isso, conseguiram voltar para suas realidades e um deles descobriu que
+                                            a criança reencarnou na sua realidade como uma criança normal.</p>
+                                        <p>No dia, eu não esperava que acabaria mestrando uma sessão, então foi tudo
+                                            extremamente improvisado. No final, consegui fazer três jogadores chorarem.
+                                            Apesar da dificuldade, acho que isso me validou como uma boa mestre, então
+                                            acho que posso dizer que a sessão foi ótima.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="imagens/shcoolanime.PNG" alt="#" class="card-img-top mt-3 rounded-4">
+                    <h3>My High School Romance (MHSR)</h3>
+                    <p>Em um mundo onde todos são ocupados com suas próprias questões, nossos protagonistas, ainda longe
+                        desse cenário, se encontram com uma tarefa que exige coragem e confiança em si mesmo. Já pararam
+                        pra pensar, "o quão difícil é se apaixonar"? Bom, as vezes as tarefas mais fáceis para alguns
+                        são extremamnte difíceis para outros. Uma ajudinha cai bem, não cai? Haha!</p>
+                    <p>- HistoryTeller, E.A.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mhsr">
+                            Saiba Mais
+                        </button>
+
+                        <div class="modal" id="mhsr">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark text-light">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detalhes</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>MHSR ainda é um projeto que está em desenvlvimento.</p>
+                                        <p>A princípio, a ideia é: Os jogadores serão todos adolescentes no ensino médio
+                                            tentando se declarar para as pessoas que gostam, porém com divérsos desafios
+                                            no caminho. Talvez tenham uma ajuda mágica para lhes ajudar a passarem por
+                                            isso. <!-- IS THAT A ROMANTIC KILLER REFERENCE???? --> </p>
+                                        <P>O sistema ainda não foi escolhido/desenvolvido, mas estou trabalhando nisso.
+                                            A minha previsão é que a "campanha" fique pronta para jogar até final desse
+                                            ano.</P>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <button data-bs-toggle="collapse" data-bs-target="#erha" class="btn my-4 w-100">
+                <section class="container text-center my-4 text-success">
+                    <h2 data-bs-toggle="tooltip" title="Shows all my favorite games">Erhael Aurens</h2>
+                </section>
+            </button>
+
+            <div id="erha" class="collapse">
+                <section class="container row d-flex vh-80">
+                    <section class=" row col-12 col-md-6 d-flex">
+                        <div class="col-12 col-md-6">
+                            <img src="imagens/IMG_20250415_234500_767.jpg" alt="Larissa Mariana Fontes Reis"
+                                class="img-fluid w-100" style="max-height: 500px; max-width: 325px;">
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column">
+                            <h2>Sobre mim</h2>
+                            <p>Prazer, meu nome é Larissa Reis e tenho 19 anos. Sou player de RPG desde 2022/23 e mestre
+                                nas
+                                horas vagas. RPG é meu hobbie principal (e meu favorito) mas não tenho praticado com
+                                frequência nos ultimos tempos. Gosto de escrever campanhas e sou uma player dedicada
+                                (pelo
+                                que a maioria diz (meu primeiro mestre de RPG pode confirmar essa informação kkkk)).</p>
+                        </div>
+                    </section>
+                    <section class="col-12 col-md-6 d-flex flex-column">
+                        <div class="container">
+                            <h2>Player e DM</h2>
+                            <p>Prazer, meu nome é Larissa Reis e tenho 19 anos. Sou player de RPG desde 2022/23 e mestre
+                                nas
+                                horas vagas. RPG é meu hobbie principal (e meu favorito) mas não tenho praticado com
+                                frequência nos ultimos tempos. Gosto de escrever campanhas e sou uma player dedicada
+                                (pelo
+                                que a maioria diz (meu primeiro mestre de RPG pode confirmar essa informação kkkk))</p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+        </main>
+    </section>
+
+
+
+
+    <footer class="bg-light text-dark mt-auto bg-dark text-light">
+        <div class="container text-center mt-2 text-light">
+            <p>&copy; 2025 Larissa Mariana Fontes Reis</p>
+            <nav>
+                <a href="https://github.com/#" target="_blank" class="mx-2 text-light">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/#" target="_blank" class="mx-2 text-light">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/#" target="_blank" class="mx-2 text-light">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Games Played</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="py-3 text-center bg-black text-white">
+        <h1>Games I have played for the last years</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide pt-3" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="d-block w-50 mx-auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Cyberpunk2077.jpg" alt="CyberPunk 2077" class="d-block w-50 mx-auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/DetroitBevomeHuman.jpg" alt="Detroit Become Human" class="d-block w-50 mx-auto">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <button data-bs-toggle="collapse" data-bs-target="#fav" class="btn my-4 w-100">
+            <section class="container text-center my-4">
+                <h2 data-bs-toggle="tooltip" title="Shows all my favorite games">My favorite games</h2>
+            </section>
+        </button>
+
+        <div id="fav" class="collapse">
+
+            <section class="row row-cols-md-2 row-cols-lg-3 g-4 mt-5 d-flex justify-content-around">
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3">
+                    <h3>Red Dead Redemption 2 | 10/10</h3>
+                    <p>This game provided me with a lot of joy and learning, going through Arthur Morgan's final days in
+                        the
+                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reddead">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="reddead">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Red Dead Redemption 2</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Red Dead Redemption 2 (2018) is an open-world action-adventure game developed
+                                            by Rockstar Games. Set in the late 19th century, the game follows the story
+                                            of Arthur Morgan, an outlaw and member of the Van der Linde gang, led by the
+                                            charismatic Dutch van der Linde.</p>
+                                        <p>Featuring stunning graphics, a vast and highly detailed world, the game
+                                            blends intense shootouts, exploration, richly narrated side quests, and an
+                                            honor system that influences gameplay. The story explores themes of loyalty,
+                                            survival, and the decline of the Wild West, as Arthur grapples with his
+                                            choices and the conflict between a life of crime and redemption.</p>
+                                        <p>Gameplay includes hunting, interactions with NPCs, camp customization, and a
+                                            dynamic system of random events. RDR2 is praised for its deep storytelling,
+                                            memorable characters, and immersive world, making it one of the greatest
+                                            gaming experiences ever created.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/Cyberpunk2077.jpg" alt="Cyberpunk2077" class="card-img-top mt-3">
+                    <h3>CyberPunk 2077 | 10/10</h3>
+                    <p>Even though I haven't finished the game yet, I've already put it in my top games of all time. The
+                        environment of the game is awsome, it's in a cyberpunk world, where technology rules.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#cyberpunk">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="cyberpunk">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Cyberpunk 2077</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Cyberpunk 2077 (2020) is an open-world RPG set in the dystopian metropolis of
+                                            Night City, where power, technology, and body modifications rule. You play
+                                            as V, a mercenary chasing immortality after a heist gone wrong. With the
+                                            digital ghost of legendary rockerboy Johnny Silverhand (played by Keanu
+                                            Reeves) stuck in your head, you must navigate a web of gangs, corporations,
+                                            and cyber-enhanced criminals to survive.</p>
+                                        <p>The game blends deep storytelling with FPS combat, hacking, and player-driven
+                                            choices that shape the world and multiple endings. Despite a rocky launch,
+                                            Cyberpunk 2077 offers a visually stunning world, gripping side quests, and a
+                                            mature narrative about identity, power, and human cost in a hyper-capitalist
+                                            future.</p>
+                                        <p>With its immersive atmosphere, strong voice acting, and the Phantom Liberty
+                                            expansion, it has evolved into a must-play for sci-fi RPG fans.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/GrandTheftAutoV.jpg" alt="Grand Theft Auto V" class="card-img-top mt-3">
+                    <h3>Grand Theft Auto V | 9/10</h3>
+                    <p>I'm not a big fan of the story mode of the game, but i love the online mode, playing with friends
+                        and
+                        doing heists. Most of it is just fun and joy, a have about 6.000 hours og GTAV in my Playstation
+                        4
+                    </p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gtav">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="gtav">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Grand Theft Auto V</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Grand Theft Auto V (GTA 5) (2013) is an open-world action-adventure game
+                                            developed by Rockstar Games. Set in the sprawling, satirical city of Los
+                                            Santos (a fictionalized Los Angeles), the game follows three very different
+                                            criminals: Michael, a retired bank robber living in witness protection;
+                                            Franklin, a young street hustler looking for bigger opportunities; and
+                                            Trevor, a violent, unpredictable meth dealer with a short fuse.</p>
+                                        <p>The story weaves between their chaotic lives as they pull off high-stakes
+                                            heists while evading law enforcement, rival gangs, and their own personal
+                                            demons. GTA V combines explosive action, driving, shooting, and
+                                            mission-based gameplay with a massive, interactive world full of side
+                                            activities, from golf and stock trading to illegal street races and bizarre
+                                            strangers.</p>
+                                        <p>Praised for its sharp satire, engaging storytelling, and unmatched freedom,
+                                            GTA V remains one of the best-selling and most influential games of all
+                                            time, with its online counterpart, GTA Online, continuing to expand years
+                                            after release.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/DetroitBevomeHuman.jpg" alt="Detroit Become Human"
+                        class="card-img-top width-100 mt-3">
+                    <h3>Detroit Become Human | 9/10</h3>
+                    <p>Detroit Become Human was the first game that has just story that I played. The story of this game
+                        is
+                        just amazing, and all the possible endings makes you want to play more, even after you've
+                        already
+                        finished the game.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detroit">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="detroit">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detroit Become Human</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Detroit: Become Human (2018) is a narrative-driven adventure game developed
+                                            by Quantic Dream. Set in a futuristic Detroit where lifelike androids serve
+                                            humans, the game explores themes of artificial intelligence, discrimination,
+                                            and free will through the interconnected stories of three androids: Connor,
+                                            a detective android tasked with hunting deviants; Kara, a caretaker android
+                                            who develops a motherly bond with a young girl; and Markus, a revolutionary
+                                            leader fighting for android rights.</p>
+                                        <p>The game is a branching cinematic experience where every choice and action
+                                            dramatically impacts the story, leading to multiple possible endings. With
+                                            its stunning visuals, emotional performances, and heavy emphasis on player
+                                            agency, Detroit: Become Human delivers a gripping, thought-provoking
+                                            experience that questions what it means to be alive.</p>
+                                        <p>Praised for its ambitious storytelling and moral dilemmas, the game stands as
+                                            one of the most immersive interactive dramas in gaming.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3">
+                    <h3>Watch Dogs 2 | 8.8/10</h3>
+                    <p>This game was the first tech game I've played, and i loved it, it was awsome and interesting. I
+                        first
+                        finished it in my Playstation 4 and some time ago i bought and played the game again on PC.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-primary">Link
+                            Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#whatchdogs">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="whatchdogs">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Watch Dogs 2</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Watch Dogs 2 (2016) is an open-world action-adventure game developed by
+                                            Ubisoft. Set in a vibrant, tech-savvy rendition of San Francisco, the game
+                                            follows Marcus Holloway, a brilliant young hacker who joins the activist
+                                            group DedSec to take down the corrupt corporations exploiting people's data
+                                            through the city's interconnected surveillance system, ctOS 2.0.</p>
+                                        <p>Unlike its more serious predecessor, Watch Dogs 2 embraces a playful,
+                                            satirical tone, blending hacking, stealth, and third-person shooting with a
+                                            focus on non-lethal takedowns and creative problem-solving. Marcus can
+                                            remotely manipulate gadgets, drones, and vehicles, turning the city itself
+                                            into a weapon. The game encourages freedom in approaching missions—whether
+                                            through stealth, hacking, or chaotic disruption.</p>
+                                        <p>With its colorful open world, engaging characters, and sharp critique of
+                                            modern tech culture, Watch Dogs 2 is praised for its fun gameplay, improved
+                                            mechanics, and lighter, more relatable story, making it a standout in the
+                                            hacker-sandbox genre.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <button data-bs-toggle="collapse" data-bs-target="#finish" class="btn my-4 w-100">
+            <section class="container text-center my-4">
+                <h2 data-bs-toggle="tooltip" title="Shows all the games I've finished">Main games completed on Steam
+                </h2>
+            </section>
+        </button>
+
+        <div id="finish" class="collapse">
+
+            <section class="row container mb-5 d-flex justify-content-around align-items-center">
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3">
+                    <h3>Red Dead Redemption 2 | 10/10</h3>
+                    <p>This game provided me with a lot of joy and learning, going through Arthur Morgan's final days in
+                        the
+                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reddead2">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="reddead2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Red Dead Redemption 2</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Red Dead Redemption 2 (2018) is an open-world action-adventure game developed
+                                            by Rockstar Games. Set in the late 19th century, the game follows the story
+                                            of Arthur Morgan, an outlaw and member of the Van der Linde gang, led by the
+                                            charismatic Dutch van der Linde.</p>
+                                        <p>Featuring stunning graphics, a vast and highly detailed world, the game
+                                            blends intense shootouts, exploration, richly narrated side quests, and an
+                                            honor system that influences gameplay. The story explores themes of loyalty,
+                                            survival, and the decline of the Wild West, as Arthur grapples with his
+                                            choices and the conflict between a life of crime and redemption.</p>
+                                        <p>Gameplay includes hunting, interactions with NPCs, camp customization, and a
+                                            dynamic system of random events. RDR2 is praised for its deep storytelling,
+                                            memorable characters, and immersive world, making it one of the greatest
+                                            gaming experiences ever created.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/DetroitBevomeHuman.jpg" alt="Detroit Become Human"
+                        class="card-img-top width-100 mt-3">
+                    <h3>Detroit Become Human | 9/10</h3>
+                    <p>Detroit Become Human was the first game that has just story that I played. The story of this game
+                        is
+                        just amazing, and all the possible endings makes you want to play more, even after you've
+                        already
+                        finished the game.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detroit2">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="detroit2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detroit Become Human</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Detroit: Become Human (2018) is a narrative-driven adventure game developed
+                                            by Quantic Dream. Set in a futuristic Detroit where lifelike androids serve
+                                            humans, the game explores themes of artificial intelligence, discrimination,
+                                            and free will through the interconnected stories of three androids: Connor,
+                                            a detective android tasked with hunting deviants; Kara, a caretaker android
+                                            who develops a motherly bond with a young girl; and Markus, a revolutionary
+                                            leader fighting for android rights.</p>
+                                        <p>The game is a branching cinematic experience where every choice and action
+                                            dramatically impacts the story, leading to multiple possible endings. With
+                                            its stunning visuals, emotional performances, and heavy emphasis on player
+                                            agency, Detroit: Become Human delivers a gripping, thought-provoking
+                                            experience that questions what it means to be alive.</p>
+                                        <p>Praised for its ambitious storytelling and moral dilemmas, the game stands as
+                                            one of the most immersive interactive dramas in gaming.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3">
+                    <h3>Watch Dogs 2 | 8.8/10</h3>
+                    <p>This game was the first tech game I've played, and i loved it, it was awsome and interesting. I
+                        first
+                        finished it in my Playstation 4 and some time ago i bought and played the game again on PC.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-primary">Link
+                            Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#whatchdogs2">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="whatchdogs2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Watch Dogs 2</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Watch Dogs 2 (2016) is an open-world action-adventure game developed by
+                                            Ubisoft. Set in a vibrant, tech-savvy rendition of San Francisco, the game
+                                            follows Marcus Holloway, a brilliant young hacker who joins the activist
+                                            group DedSec to take down the corrupt corporations exploiting people's data
+                                            through the city's interconnected surveillance system, ctOS 2.0.</p>
+                                        <p>Unlike its more serious predecessor, Watch Dogs 2 embraces a playful,
+                                            satirical tone, blending hacking, stealth, and third-person shooting with a
+                                            focus on non-lethal takedowns and creative problem-solving. Marcus can
+                                            remotely manipulate gadgets, drones, and vehicles, turning the city itself
+                                            into a weapon. The game encourages freedom in approaching missions—whether
+                                            through stealth, hacking, or chaotic disruption.</p>
+                                        <p>With its colorful open world, engaging characters, and sharp critique of
+                                            modern tech culture, Watch Dogs 2 is praised for its fun gameplay, improved
+                                            mechanics, and lighter, more relatable story, making it a standout in the
+                                            hacker-sandbox genre.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/Battlefield5.jpg" alt="Battlefield 5" class="card-img-top mt-3">
+                    <h3>Battlefield 5 | 6.5/10</h3>
+                    <p>Battlefield 5 is a WW2 game, and me personaly really like WW2 games. The bad part about the game
+                        is the overall game time, that its too short, but, to compensate that, they made the online
+                        combats, and its amazing.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1238810/Battlefield_V/" class="btn btn-primary">Link
+                            Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#battlefield">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="battlefield">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Battlefield 5</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Battlefield V (2018) is a first-person shooter developed by DICE and
+                                            published by Electronic Arts, set in World War II. The game emphasizes
+                                            large-scale warfare with its signature "All-Out War" multiplayer battles,
+                                            featuring up to 64 players in modes like Conquest and Breakthrough, where
+                                            teamwork, vehicle combat (tanks, planes, and transports), and dynamic
+                                            destruction play key roles.</p>
+                                        <p>The single-player War Stories campaign offers short, cinematic missions based
+                                            on lesser-known events of WWII, highlighting different perspectives of the
+                                            conflict. Multiplayer includes the Firestorm battle royale mode (now less
+                                            active) and Grand Operations, a multi-day, objective-driven experience.</p>
+                                        <p>Praised for its immersive gunplay, stunning visuals, and realistic sound
+                                            design, Battlefield V also faced criticism for its live-service model and
+                                            initial lack of content. However, post-launch updates added iconic battles,
+                                            weapons, and factions, solidifying it as a solid entry for fans of tactical,
+                                            large-scale shooters.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/Farcry5.png" alt="Farcry 5" class="card-img-top mt-3">
+                    <h3>Farcry 5 | 7/10</h3>
+                    <p>It's an amazing game when played with friends. Doing the objectives and playing around in the
+                        game with a friend is very fun.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/552520/Far_Cry_5/" class="btn btn-primary">Link
+                            Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#far5">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="far5">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Farcry 5</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Far Cry 5 (2018) is an open-world first-person shooter developed by Ubisoft.
+                                            Set in the fictional rural county of Hope County, Montana, the game pits
+                                            players against Joseph Seed, a fanatical cult leader, and his zealous
+                                            followers known as The Project at Eden’s Gate. As a rookie sheriff's deputy,
+                                            you must build a resistance, liberate outposts, and dismantle the cult’s
+                                            grip on the region through guerrilla warfare.</p>
+                                        <p>The game emphasizes chaotic freedom, allowing players to approach combat with
+                                            guns, explosives, or recruited allies ("Guns for Hire"), including a
+                                            memorable cast like the sniper Grace Armstrong or the bear Cheeseburger.
+                                            With its vast open world, dynamic events, and cooperative multiplayer, Far
+                                            Cry 5 delivers explosive action, dark humor, and a divisive but bold
+                                            narrative tackling themes of extremism and blind faith.</p>
+                                        <p>Praised for its gameplay and Montana setting but critiqued for its story
+                                            pacing, it remains a standout in the Far Cry series for its sandbox mayhem
+                                            and eerie atmosphere.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/farcrynewdawn.webp" alt="Farcry New Dawn" class="card-img-top mt-3">
+                    <h3>Farcry New Dawn | 5/10</h3>
+                    <p>It could easily be a Farcry 5 DLC, just like the other ones. Besides that, the RPG aspect of the
+                        game is amazing, with a good RPG Aspect.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/939960/Far_Cry_New_Dawn/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#farnew">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="farnew">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Farcry New Dawn</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Far Cry New Dawn (2019) is a standalone spin-off and sequel to Far Cry 5, set
+                                            17 years after a global nuclear catastrophe. The game takes place in a
+                                            vibrant, post-apocalyptic version of Hope County, Montana, now transformed
+                                            by the "Superbloom"—a colorful but dangerous ecosystem where nature has
+                                            reclaimed the ruins of civilization.</p>
+                                        <p>Players take on the role of a survivor helping to rebuild the community of
+                                            Prosperity, while battling the Highwaymen, a ruthless gang of scavengers led
+                                            by the twin sisters Mickey and Lou. The game retains Far Cry's signature
+                                            open-world chaos, with outpost raids, crafting, and "Guns for Hire"
+                                            companions, but introduces Expeditions—missions to scavenge resources in
+                                            far-off locations like a flooded amusement park or a crashed aircraft
+                                            carrier.</p>
+                                        <p>With its lighter RPG elements (tiered weapons/gear), vibrant art style, and
+                                            ties to Far Cry 5's story, New Dawn offers a shorter, more focused
+                                            experience. It's praised for its fun gameplay loop and creative take on
+                                            post-apocalyptic settings, though some critics found it less ambitious than
+                                            mainline entries. A solid pick for fans of chaotic, loot-driven shooters.
+                                        </p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/justcause3.jpg" alt="Just Cause 3" class="card-img-top mt-3">
+                    <h3>Just Cause 3 | 8/10</h3>
+                    <p>This game is amazing to explode and destroy things, there's a lot of perks you can use to do a
+                        lot of fun things, vehicles, guns, armors, planes, helicopters and much more!</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/225540/Just_Cause_3/" class="btn btn-primary">Link
+                            Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#just3">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="just3">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Just Cause 3</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Just Cause 3 (2015) is an open-world action-adventure game developed by
+                                            Avalanche Studios. Set on the fictional Mediterranean island of Medici,
+                                            ruled by the ruthless dictator General Di Ravello, you play as Rico
+                                            Rodriguez—a chaos-loving, grapple-hook-wielding mercenary on a mission to
+                                            liberate the island and ignite a revolution.</p>
+                                        <p>The game is all about over-the-top destruction and sandbox freedom. With
+                                            Rico's iconic wingsuit, parachute, and retractable grapple hook (now
+                                            upgraded for tethering objects), you can unleash creative havoc—flinging
+                                            enemies into explosives, hijacking vehicles mid-air, or toppling military
+                                            bases with reckless style. The map is packed with towns, military
+                                            installations, and scenic landscapes to explode, liberate, or just joyride
+                                            through.</p>
+                                        <p>While criticized for performance issues and repetitive objectives, Just Cause
+                                            3 excels as a pure physics-driven playground, where causing mayhem is the
+                                            main goal. Its explosive gameplay, sunny setting, and lack of seriousness
+                                            make it a blast for fans of chaotic, unscripted fun.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/mafia.jpg" alt="Máfia Definitive Edition" class="card-img-top mt-3">
+                    <h3>Máfia: Definitive Edition | 7/10</h3>
+                    <p>The story is amazing and i love the ambient of the game, the cars, guns, etc. But one thing I
+                        really don't like about this game is the gameplay, especially the driving.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1030840/Mafia_Definitive_Edition/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mafia">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="mafia">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Máfia: Definitive Edition</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Mafia: Definitive Edition (2020) is a full remake of the classic 2002 game,
+                                            developed by Hangar 13. Set in the 1930s in the fictional city of Lost
+                                            Heaven, the game follows Tommy Angelo, a cab driver turned mobster, as he
+                                            rises through the ranks of the Salieri crime family. The story is a gripping
+                                            tale of loyalty, betrayal, and the consequences of a life of crime, told
+                                            with cinematic depth and emotional weight.</p>
+                                        <p>The game combines narrative-driven missions with open-world elements, though
+                                            it focuses more on its linear, story-heavy design rather than sandbox chaos.
+                                            The remake features stunning visuals, revamped gameplay mechanics, and
+                                            enhanced voice acting, bringing the Prohibition-era world to life with
+                                            period-accurate cars, music, and atmosphere.</p>
+                                        <p>Praised for its storytelling, character development, and immersive setting,
+                                            Mafia: Definitive Edition is a love letter to the original, offering both
+                                            nostalgia and a fresh experience. While its driving and combat feel dated to
+                                            some, it stands as one of the best crime dramas in gaming.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/mafia2.jpg" alt="Máfia 2: Definitive Edition" class="card-img-top mt-3">
+                    <h3>Máfia 2: Definitive Edition | 6.8/10</h3>
+                    <p>The story is incredible, and I love the game's atmosphere—the cars, guns, and everything else.
+                        However, the gameplay really falls short for me, especially the driving mechanics.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1030830/Mafia_II_Definitive_Edition/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mafia2">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="mafia2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Máfia: Definitive Edition</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Mafia II: Definitive Edition (2020) is a remastered version of the 2010 cult
+                                            classic, developed by Hangar 13. Set across the 1940s-1950s in the fictional
+                                            cities of Empire Bay and Lost Heaven, the game follows Vito Scaletta, a war
+                                            veteran turned mobster, as he climbs the ranks of the Mafia in a world of
+                                            betrayal, violence, and shifting allegiances.</p>
+                                        <p>This edition bundles the base game and all DLCs (Joe's Adventures, Jimmy's
+                                            Vendetta), with upgraded visuals, 4K resolution, improved lighting, and
+                                            refined character models. The story remains a highlight—a gritty, cinematic
+                                            tale of crime, family, and the American Dream gone wrong, backed by a
+                                            stellar period-accurate soundtrack (featuring artists like Dean Martin and
+                                            Muddy Waters).</p>
+                                        <p>Gameplay blends third-person shooting, driving, and open-world exploration,
+                                            though the world is more atmospheric than interactive compared to modern
+                                            sandboxes. The combat and driving feel weighty, emphasizing realism (e.g.,
+                                            speeding attracts police, gas is limited).</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
+                    <img src="./images/battlefront2.png" alt="Battlefield 2" class="card-img-top mt-3">
+                    <h3>Battlefront 2 | 8.8/10</h3>
+                    <p>I really love the whole Star Wars Saga, so i find this game realy incrideble, the only down side,
+                        is that the game is too short. The online is just amazing, all the game modes, all the guns,
+                        characters, missions, etc. It's really fun to play when you are a Star Wars fan.</p>
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"
+                            class="btn btn-primary">Link Steam</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#battlefront">
+                            Saiba Mais...
+                        </button>
+
+                        <div class="modal" id="battlefront">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Battlefront 2</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Star Wars Battlefront II (2017) is a multiplayer-focused action shooter
+                                            developed by DICE, in collaboration with Criterion and Motive Studios. Set
+                                            in the Star Wars universe, the game spans all three eras of the
+                                            saga—Prequel, Original, and Sequel Trilogies—letting players battle as
+                                            iconic heroes (like Darth Vader, Luke Skywalker, or Rey) or as troopers on
+                                            the ground in large-scale warfare.</p>
+                                        <p>The game features:</p>
+                                        <p>- Galactic Assault & Supremacy: Epic 20v20 objective-based battles with
+                                            vehicles and heroes.</p>
+                                        <p>- Starfighter Assault: Space dogfights with ships like X-wings and TIE
+                                            fighters.</p>
+                                        <p>- Co-op & Single-Player: Includes a story campaign (following Iden Versio, an
+                                            Imperial special forces soldier) and offline modes.</p>
+                                        <p>Initially controversial for its loot box system (later removed), the game
+                                            underwent major updates, adding free maps (e.g., Geonosis, Scarif), heroes
+                                            (e.g., Obi-Wan, General Grievous), and a class-based progression system.</p>
+                                        <p>Praised for its authentic Star Wars atmosphere, visuals, and sound design,
+                                            Battlefront II became a redemption story, now regarded as a must-play for
+                                            fans of the franchise.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+
+        <a href="#login" data-bs-toggle="collapse" class="btn btn-primary mb-3">Submit your opinion</a>
+
+        <div id="login" class="collapse">
+            <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="input" class="form-label">Opinion</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Digite aqui sua opinião" name="pswd">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="bg-black text-white mt-auto">
+        <div class="container text-center mt-2">
+            <p>&copy; 2025 Gabriel Oliveira Faraco</p>
+            <nav>
+                <a href="https://github.com/gabrieloliveirafaraco" target="_blank" class="mx-2 text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/gabrielof" target="_blank" class="mx-2 text-white">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/gabrielofaraco" target="_blank" class="mx-2 text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
