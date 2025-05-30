@@ -15,7 +15,7 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <header class="py-3 text-center bg-black text-white">
+    <header class="py-3 text-center bg-dark text-white">
         <h1>Games I have played for the last years</h1>
         <nav>
             <ul class="nav justify-content-center">
@@ -30,57 +30,68 @@
     </header>
 
     <main class="container">
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide pt-3" data-bs-ride="carousel">
+        <section class="d-flex justify-content-center my-4">
+            <div id="demo" class="carousel slide pt-3 w-50" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Cyberpunk2077.jpg" alt="CyberPunk 2077" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/GrandTheftAutoV.jpg" alt="GrandTheftAutoV" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/DetroitBevomeHuman.jpg" alt="Detroit Become Human" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/WhatchDogs2.PNG" alt="Watch_Dogs_2" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
+        </section>
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="d-block w-50 mx-auto">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Cyberpunk2077.jpg" alt="CyberPunk 2077" class="d-block w-50 mx-auto">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/DetroitBevomeHuman.jpg" alt="Detroit Become Human" class="d-block w-50 mx-auto">
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button data-bs-toggle="collapse" data-bs-target="#fav" class="btn my-4 w-100">
+                <section class="container text-center my-4">
+                    <h2 data-bs-toggle="tooltip" title="Shows all my favorite games">My favorite games</h2>
+                </section>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-        <button data-bs-toggle="collapse" data-bs-target="#fav" class="btn my-4 w-100">
-            <section class="container text-center my-4">
-                <h2 data-bs-toggle="tooltip" title="Shows all my favorite games">My favorite games</h2>
-            </section>
-        </button>
+        
 
         <div id="fav" class="collapse">
 
-            <section class="row row-cols-md-2 row-cols-lg-3 g-4 mt-5 d-flex justify-content-around">
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 d-flex justify-content-around">
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3 rounded-4">
                     <h3>Red Dead Redemption 2 | 10/10</h3>
                     <p>This game provided me with a lot of joy and learning, going through Arthur Morgan's final days in
                         the
-                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.</p>
+                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.<br><br></p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reddead">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reddead">
                             Saiba Mais...
                         </button>
 
@@ -120,15 +131,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
-                    <img src="./images/Cyberpunk2077.jpg" alt="Cyberpunk2077" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/Cyberpunk2077.jpg" alt="Cyberpunk2077" class="card-img-top mt-3 rounded-4">
                     <h3>CyberPunk 2077 | 10/10</h3>
                     <p>Even though I haven't finished the game yet, I've already put it in my top games of all time. The
-                        environment of the game is awsome, it's in a cyberpunk world, where technology rules.</p>
+                        environment of the game is awsome, it's in a cyberpunk world, where technology rules.<br><br><br></p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#cyberpunk">
                             Saiba Mais...
                         </button>
@@ -169,18 +180,18 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
-                    <img src="./images/GrandTheftAutoV.jpg" alt="Grand Theft Auto V" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/GrandTheftAutoV.jpg" alt="Grand Theft Auto V" class="card-img-top mt-3 rounded-4">
                     <h3>Grand Theft Auto V | 9/10</h3>
                     <p>I'm not a big fan of the story mode of the game, but i love the online mode, playing with friends
                         and
                         doing heists. Most of it is just fun and joy, a have about 6.000 hours og GTAV in my Playstation
-                        4
+                        4<br><br>
                     </p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gtav">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#gtav">
                             Saiba Mais...
                         </button>
 
@@ -223,9 +234,9 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
                     <img src="./images/DetroitBevomeHuman.jpg" alt="Detroit Become Human"
-                        class="card-img-top width-100 mt-3">
+                        class="card-img-top width-100 mt-3 rounded-4">
                     <h3>Detroit Become Human | 9/10</h3>
                     <p>Detroit Become Human was the first game that has just story that I played. The story of this game
                         is
@@ -234,8 +245,8 @@
                         finished the game.</p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detroit">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#detroit">
                             Saiba Mais...
                         </button>
 
@@ -276,16 +287,16 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
-                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3 rounded-4">
                     <h3>Watch Dogs 2 | 8.8/10</h3>
                     <p>This game was the first tech game I've played, and i loved it, it was awsome and interesting. I
                         first
                         finished it in my Playstation 4 and some time ago i bought and played the game again on PC.</p>
                     <div class="d-flex justify-content-around pb-3">
-                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-primary">Link
+                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-info">Link
                             Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#whatchdogs">
                             Saiba Mais...
                         </button>
@@ -339,17 +350,17 @@
 
         <div id="finish" class="collapse">
 
-            <section class="row container mb-5 d-flex justify-content-around align-items-center">
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3">
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 d-flex justify-content-around">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/RedDeadRedemption2.png" alt="Red Dead Redemption 2" class="card-img-top mt-3 rounded-4">
                     <h3>Red Dead Redemption 2 | 10/10</h3>
                     <p>This game provided me with a lot of joy and learning, going through Arthur Morgan's final days in
                         the
-                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.</p>
+                        ending of wild west outlaws. The game shows the feeling of redemption like no other one did.<br><br></p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reddead2">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reddead2">
                             Saiba Mais...
                         </button>
 
@@ -389,9 +400,9 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
                     <img src="./images/DetroitBevomeHuman.jpg" alt="Detroit Become Human"
-                        class="card-img-top width-100 mt-3">
+                        class="card-img-top width-100 mt-3 rounded-4">
                     <h3>Detroit Become Human | 9/10</h3>
                     <p>Detroit Become Human was the first game that has just story that I played. The story of this game
                         is
@@ -400,8 +411,8 @@
                         finished the game.</p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detroit2">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#detroit2">
                             Saiba Mais...
                         </button>
 
@@ -442,16 +453,16 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100">
-                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/WhatchDogs2.PNG" alt="Watch Dpgs 2" class="card-img-top mt-3 rounded-4">
                     <h3>Watch Dogs 2 | 8.8/10</h3>
                     <p>This game was the first tech game I've played, and i loved it, it was awsome and interesting. I
                         first
-                        finished it in my Playstation 4 and some time ago i bought and played the game again on PC.</p>
+                        finished it in my Playstation 4 and some time ago i bought and played the game again on PC.<br><br><br></p>
                     <div class="d-flex justify-content-around pb-3">
-                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-primary">Link
+                        <a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/" class="btn btn-info">Link
                             Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#whatchdogs2">
                             Saiba Mais...
                         </button>
@@ -494,16 +505,16 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/Battlefield5.jpg" alt="Battlefield 5" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/Battlefield5.jpg" alt="Battlefield 5" class="card-img-top mt-3 rounded-4">
                     <h3>Battlefield 5 | 6.5/10</h3>
                     <p>Battlefield 5 is a WW2 game, and me personaly really like WW2 games. The bad part about the game
                         is the overall game time, that its too short, but, to compensate that, they made the online
-                        combats, and its amazing.</p>
+                        combats, and its amazing.<br><br></p>
                     <div class="d-flex justify-content-around pb-3">
-                        <a href="https://store.steampowered.com/app/1238810/Battlefield_V/" class="btn btn-primary">Link
+                        <a href="https://store.steampowered.com/app/1238810/Battlefield_V/" class="btn btn-info">Link
                             Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#battlefield">
                             Saiba Mais...
                         </button>
@@ -546,15 +557,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/Farcry5.png" alt="Farcry 5" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/Farcry5.png" alt="Farcry 5" class="card-img-top mt-3 rounded-4">
                     <h3>Farcry 5 | 7/10</h3>
                     <p>It's an amazing game when played with friends. Doing the objectives and playing around in the
-                        game with a friend is very fun.</p>
+                        game with a friend is very fun.<br><br><br></p>
                     <div class="d-flex justify-content-around pb-3">
-                        <a href="https://store.steampowered.com/app/552520/Far_Cry_5/" class="btn btn-primary">Link
+                        <a href="https://store.steampowered.com/app/552520/Far_Cry_5/" class="btn btn-info">Link
                             Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#far5">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#far5">
                             Saiba Mais...
                         </button>
 
@@ -571,8 +582,8 @@
                                         <p>Far Cry 5 (2018) is an open-world first-person shooter developed by Ubisoft.
                                             Set in the fictional rural county of Hope County, Montana, the game pits
                                             players against Joseph Seed, a fanatical cult leader, and his zealous
-                                            followers known as The Project at Eden’s Gate. As a rookie sheriff's deputy,
-                                            you must build a resistance, liberate outposts, and dismantle the cult’s
+                                            followers known as The Project at Eden's Gate. As a rookie sheriff's deputy,
+                                            you must build a resistance, liberate outposts, and dismantle the cult's
                                             grip on the region through guerrilla warfare.</p>
                                         <p>The game emphasizes chaotic freedom, allowing players to approach combat with
                                             guns, explosives, or recruited allies ("Guns for Hire"), including a
@@ -596,15 +607,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/farcrynewdawn.webp" alt="Farcry New Dawn" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/farcrynewdawn.webp" alt="Farcry New Dawn" class="card-img-top mt-3 rounded-4">
                     <h3>Farcry New Dawn | 5/10</h3>
                     <p>It could easily be a Farcry 5 DLC, just like the other ones. Besides that, the RPG aspect of the
-                        game is amazing, with a good RPG Aspect.</p>
+                        game is amazing, with a good RPG Aspect.<br><br><br></p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/939960/Far_Cry_New_Dawn/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#farnew">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#farnew">
                             Saiba Mais...
                         </button>
 
@@ -649,15 +660,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/justcause3.jpg" alt="Just Cause 3" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/justcause3.jpg" alt="Just Cause 3" class="card-img-top mt-3 rounded-4">
                     <h3>Just Cause 3 | 8/10</h3>
                     <p>This game is amazing to explode and destroy things, there's a lot of perks you can use to do a
-                        lot of fun things, vehicles, guns, armors, planes, helicopters and much more!</p>
+                        lot of fun things, vehicles, guns, armors, planes, helicopters and much more!<br><br></p>
                     <div class="d-flex justify-content-around pb-3">
-                        <a href="https://store.steampowered.com/app/225540/Just_Cause_3/" class="btn btn-primary">Link
+                        <a href="https://store.steampowered.com/app/225540/Just_Cause_3/" class="btn btn-info">Link
                             Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#just3">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#just3">
                             Saiba Mais...
                         </button>
 
@@ -700,15 +711,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/mafia.jpg" alt="Máfia Definitive Edition" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/mafia.jpg" alt="Máfia Definitive Edition" class="card-img-top mt-3 rounded-4">
                     <h3>Máfia: Definitive Edition | 7/10</h3>
                     <p>The story is amazing and i love the ambient of the game, the cars, guns, etc. But one thing I
                         really don't like about this game is the gameplay, especially the driving.</p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1030840/Mafia_Definitive_Edition/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mafia">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#mafia">
                             Saiba Mais...
                         </button>
 
@@ -750,15 +761,15 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/mafia2.jpg" alt="Máfia 2: Definitive Edition" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/mafia2.jpg" alt="Máfia 2: Definitive Edition" class="card-img-top mt-3 rounded-4">
                     <h3>Máfia 2: Definitive Edition | 6.8/10</h3>
                     <p>The story is incredible, and I love the game's atmosphere—the cars, guns, and everything else.
                         However, the gameplay really falls short for me, especially the driving mechanics.</p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1030830/Mafia_II_Definitive_Edition/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mafia2">
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#mafia2">
                             Saiba Mais...
                         </button>
 
@@ -800,16 +811,16 @@
                     </div>
                 </article>
 
-                <article class="card col-lg-3 col-md-4 col-md-6 h-100 vh-80">
-                    <img src="./images/battlefront2.png" alt="Battlefield 2" class="card-img-top mt-3">
+                <article class="card col-lg-3 col-md-6 col-12 h-100 vh-80 rounded-5 bg-dark text-light">
+                    <img src="./images/battlefront2.png" alt="Battlefield 2" class="card-img-top mt-3 rounded-4">
                     <h3>Battlefront 2 | 8.8/10</h3>
                     <p>I really love the whole Star Wars Saga, so i find this game realy incrideble, the only down side,
                         is that the game is too short. The online is just amazing, all the game modes, all the guns,
                         characters, missions, etc. It's really fun to play when you are a Star Wars fan.</p>
                     <div class="d-flex justify-content-around pb-3">
                         <a href="https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"
-                            class="btn btn-primary">Link Steam</a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            class="btn btn-info">Link Steam</a>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#battlefront">
                             Saiba Mais...
                         </button>
@@ -860,7 +871,7 @@
 
         </div>
 
-        <a href="#login" data-bs-toggle="collapse" class="btn btn-primary mb-3">Submit your opinion</a>
+        <a href="#login" data-bs-toggle="collapse" class="btn btn-primary mb-4 mt-5">Submit your opinion</a>
 
         <div id="login" class="collapse">
             <form action="/action_page.php">
@@ -881,13 +892,13 @@
                     <label for="input" class="form-label">Opinion</label>
                     <input type="text" class="form-control" id="pwd" placeholder="Digite aqui sua opinião" name="pswd">
                 </div>
-                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                <button type="submit" class="btn btn-success mb-3">Submit</button>
             </form>
         </div>
 
     </main>
 
-    <footer class="bg-black text-white mt-auto">
+    <footer class="bg-dark text-white mt-auto">
         <div class="container text-center mt-2">
             <p>&copy; 2025 Gabriel Oliveira Faraco</p>
             <nav>

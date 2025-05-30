@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firelink check</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://img1.picmix.com/output/stamp/normal/4/1/4/2/2292414_166dc.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar-jogos">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:5501/Index.html#">
+                    <img src="Imagens/2292414_166dc(1).png" alt="Bonfire">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <div class="dropdown"> <!--Dropdown da navbar-->
+                        <button class="dropdown-toggle nav-link text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jogos
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="ds1.html">Dark souls</a></li>
+                        <li><a class="dropdown-item" href="ds2.html">Dark souls 2</a></li>
+                        <li><a class="dropdown-item" href="ds3.html">Dark souls 3</a></li>
+                        <li><a class="dropdown-item" href="er.html">Elden ring</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="Login.html">Criar conta</a>
+                    </li>
+
+                    
+                    
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+<main class="container mb-5">
+    
+    <section>
+        <div class="text-light d-flex flex-column">
+            <div class=" d-flex justify-content-center mt-3">
+                <h1>Criar conta</h1>
+            </div>
+            
+            <form class="text-light d-flex justify-content-center align-items-center mt-5 flex-column">
+                <div class="d-flex flex-column w-75"> 
+                    <label class="form-label" for="nick">Nome de usuário</label>
+                    <input class="form-control" required id="nick" type="text" placeholder="Insira o seu nome de usuário aqui" maxlength="20">
+                </div>
+                <div class="d-flex flex-column w-75"> 
+                    <label class="form-label" for="senha">Senha</label>
+                    <input class="form-control" required id="senha" type="password" placeholder="Insira a sua senha aqui" maxlength="20">
+                </div>
+
+                    <div class="form-check mt-4">
+                        <p class="d-flex justify-content-center">Defina o seu sexo</p>
+                        <div class="d-flex flex-row">
+                            <div class="mx-2">
+                                <input class="form-check-input" type="radio" value="" id="masc" name="sexo">
+                                <label class="form-check-label" for="masc">
+                                Masculino
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" value="" id="fem" name="sexo">
+                                <label class="form-check-label" for="fem">
+                                Feminino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                <div class="mt-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Diga qual o seu souls-like preferido</option>
+                        <option value="1">Demon souls</option>
+                        <option value="2">Dark souls</option>
+                        <option value="3">Dark souls II</option>
+                        <option value="4">Dark souls III</option>
+                        <option value="5">Bloodborne</option>
+                        <option value="6">Sekiro: shadows die twice</option>
+                        <option value="7">Elden ring</option>
+                        <option value="8">Elden ring nightreign</option>
+                    </select>
+
+                </div>
+                <button class="btn btn-info mt-5" style="width: 200px;">Criar conta</button>
+
+                <a class="mt-4" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Crie uma conta para salvar alterações de sua lista em multiplos dispositivos, além de receber notificações de atualizações">Para que criar uma conta? (passe o mouse por cima) </a></p>
+               
+  
+  
+  
+            </form>
+                
+        </div>
+       
+
+    </section>
+
+    
+
+
+
+
+</main>
+
+<footer class="text-light fixed-bottom">
+  <div class="d-flex justify-content-end align-items-end bg-secondary">
+    <p>Dark souls© e Elden ring© são propriedades da Fromsoftware©</p>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+    </script>
+    
+</body>

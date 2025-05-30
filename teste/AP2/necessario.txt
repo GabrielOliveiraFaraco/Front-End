@@ -1,0 +1,15 @@
+
+
+---
+
+    Responsível V
+    Navbar V
+    Duas páginas ou mais V
+    Card V
+    Formulário V
+    Componente interativo V
+    Carrossel V
+    2 itens de bootstrap (Modal, poopover, toast ou tooltip) V
+    Organizado V
+    Display flex V
+    Documentação -
