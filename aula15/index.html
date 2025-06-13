@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e Funções</title>
+</head>
+<style>
+    #mouse{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+    }
+</style>
+<body >
+    <h1>Eventos e Funções</h1>
+    <form>
+
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" onchange="textoMudou()" onfocus="ganhouFoco()" onblur="perdeuFoco()">
+        <button type="button" onclick="saudacao()">Olá</button>
+
+        <div id="mouse" onmouseover="mouseCima()" onmouseleave="mouseSaiu()">
+            Passa o mouse aqui...
+        </div>
+        <p id="texto">Texto para resultado</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
