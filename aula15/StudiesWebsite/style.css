@@ -1,0 +1,112 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #AEC8A4;
+    --secondary-color: #E7EFC7;
+    --text-color: #333;
+    --font-family:  'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:  center;
+    height: 100vh;
+    margin: auto;
+}
+
+.header {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.logo {
+    width: 2em;
+    height: 2em;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.calculadora-container {
+    background-color: #F0F4C3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.operations-list {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.operations-list li {
+    font-weight: 600;
+}
+
+.esquerda{
+    flex: 1;
+    text-align: left;
+}
+
+.esquerda-texto {
+    margin-top: 0.5em;
+}
+
+.direita-texto {
+    margin-top: 0.5em;
+}
+
+.footer {
+    background-color: #E7EFC7;
+    padding: 0.7em;
+    text-align: center;
+}
+
+.calculadora-container-final {
+    background-color: #F0F4C3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}

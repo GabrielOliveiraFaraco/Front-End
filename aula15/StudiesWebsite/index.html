@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="header">
+        <nav  class="navbar">
+            <ul  class="nav-list">
+                <li class="nav-list-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="./imagens/logo.png" alt="Logo" class="logo">
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="calculadora.html" class="nav-link">Calculadora</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="verificacao.html" class="nav-link">Verificação</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="d-flex flex-column principal">
+
+        <div class="row d-flex justify-content-center calculadora-container">
+            <div class="col-md-6 col-12 col-lg-6 esquerda">
+                <h1 class="title">Bem-vindo ao CalculaFácil!</h1>
+                <p class="esquerda-texto">Precisa fazer operações matemáticas básicas como adição, subtração, multiplicação ou divisão? Nossa calculadora está pronta para ajudar!</p>
+            </div>
+            <div class="col-md-6 col-12 col-lg-6 direita">
+                <h1 class="title">Como usar a calculadora</h1>
+                <p class="direita-texto">Para realizar uma operação, basta inserir os números e selecionar a operação desejada. A calculadora irá fornecer o resultado instantaneamente.</p>
+                <p>Você pode realizar as seguintes operações:</p>
+                <ul class="operations-list">
+                    <li>Adição</li>
+                    <li>Subtração</li>
+                    <li>Multiplicação</li>
+                    <li>Divisão</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center calculadora-container">
+            <div class="col-md-6 col-12 col-lg-6 esquerda">
+                <h1 class="title">Cálculo de Nota e Verificação de Aprovação</h1>
+                <p class="esquerda-texto">Quer saber se passou naquela disciplina ou prova? Com essa ferramenta, você insere suas notas e o sistema calcula automaticamente sua média e informa se você foi aprovado ou não!</p>
+            </div>
+            <div class="col-md-6 col-12 col-lg-6 direita">
+                <h1 class="title">Como usar o verificador</h1>
+                <p class="direita-texto">Para verificar sua aprovação, insira suas notas e o sistema calculará sua média. Se a média for igual ou superior a 7, você será considerado aprovado!</p>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>&copy; Gabriel Oliveira Faraco & Larissa Mariana Fontes Reis.</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
