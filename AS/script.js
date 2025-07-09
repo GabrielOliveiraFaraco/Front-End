@@ -1,13 +1,11 @@
 const time = document.getElementById('tarefa')
 const listaTimes = document.getElementById('listaTarefas')
 const listaConcluidas = document.getElementById('tarefasConcluidas')
-let prioridade = 'Baixa' // valor padrão
+let prioridade = 'Baixa'
 
-// Arrays para armazenar tarefas
 let tarefasPendentes = []
 let tarefasConcluidas = []
 
-// Carregar do localStorage ao iniciar
 window.onload = function() {
     const pendentesSalvas = localStorage.getItem('tarefasPendentes')
     const concluidasSalvas = localStorage.getItem('tarefasConcluidas')
@@ -17,7 +15,6 @@ window.onload = function() {
     renderizarTarefasConcluidas()
 }
 
-// Função para converter datas ao fazer parse do JSON
 function dateReviver(key, value) {
     if (key === 'data' || key === 'dataConclusao') {
         return value ? new Date(value) : value
@@ -158,7 +155,6 @@ function ordenarConcluidasPorData(){
     renderizarTarefasConcluidas()
 }
 
-// Expor funções para o escopo global
 window.definirPrioridade = definirPrioridade
 window.adicionarTarefa = adicionarTarefa
 window.concluirTarefa = concluirTarefa

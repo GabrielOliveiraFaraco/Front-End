@@ -24,11 +24,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items:  center;
-    height: 100vh;
     margin: auto;
     flex: 1 0 auto;
     width: 100%;
     min-height: 0;
+    margin-bottom: 2.5em;
 }
 
 .header {
@@ -68,9 +68,22 @@ main {
 }
 
 .dropdown-menu {
-    background: none;
-    border: none;
-    margin: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    min-width: 140px;
+}
+
+.dropdown-item {
+    border-radius: 6px;
+    margin: 0.2em 0;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background: var(--baixa);
+    color: var(--text-color);
 }
 
 .title {
@@ -91,15 +104,36 @@ main {
 .tarefas{
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
-.tarefas-javascript{
+.tarefas-javascript {
     display: flex;
-    justify-content: center;
-    padding: 0.6em;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 0.8em 1em;
     margin: 1em 0;
+    font-size: 1.05em;
+}
+
+.tarefas-javascript button {
+    background: var(--media);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.3em 0.8em;
+    margin-left: 0.5em;
+    font-size: 0.95em;
+    transition: background 0.2s;
+}
+
+.tarefas-javascript button:hover {
+    background: var(--alta);
 }
 
 .lista-tarefas {
@@ -114,17 +148,70 @@ main {
     margin-bottom: 2em;
 }
 
-.card-lista{
-    width: 100%;
+.card-lista {
+    width: 48%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    margin: 0 1%;
+    padding: 2em 1.5em 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.btn{
-    margin: 0;
-    padding: 0;
+.btn, .dropdown-toggle {
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5em 1.2em;
+    margin: 0.2em;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.card-title{
-    font-size: 1.2em;
+.btn:hover, .dropdown-toggle:hover {
+    background: var(--media);
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.3em;
     font-weight: 700;
     color: var(--text-color);
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+#tarefa {
+    width: 320px;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    margin-right: 1em;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: border 0.2s;
+}
+
+#tarefa:focus {
+    border: 2px solid var(--media);
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .tarefas {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .card-lista {
+        width: 95%;
+    }
 }
